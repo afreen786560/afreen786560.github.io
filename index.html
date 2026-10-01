@@ -1,245 +1,272 @@
 <!DOCTYPE html>
-
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Afreen | BS Computer Science Portfolio</title>
 
-```
-<style>
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        font-family: Arial, sans-serif;
-    }
+    <title>Afreen's Web Technology Portfolio</title>
 
-    body {
-        background: #f5f7fb;
-        color: #222;
-        line-height: 1.6;
-    }
+    <style>
 
-    header {
-        background: #1f2937;
-        color: white;
-        padding: 20px 8%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
+        body {
+            background-color: #f5f5f5;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            color: #333;
+        }
 
-    header h2 {
-        font-size: 22px;
-    }
-
-    nav a {
-        color: white;
-        text-decoration: none;
-        margin-left: 20px;
-        font-size: 15px;
-    }
-
-    nav a:hover {
-        text-decoration: underline;
-    }
-
-    .hero {
-        min-height: 70vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        padding: 40px 20px;
-        background: white;
-    }
-
-    .hero h1 {
-        font-size: 48px;
-        margin-bottom: 10px;
-    }
-
-    .hero h1 span {
-        color: #4f46e5;
-    }
-
-    .hero h3 {
-        font-size: 22px;
-        color: #555;
-        margin-bottom: 15px;
-    }
-
-    .hero p {
-        max-width: 650px;
-        color: #666;
-        margin-bottom: 25px;
-    }
-
-    .button {
-        display: inline-block;
-        padding: 12px 25px;
-        background: #4f46e5;
-        color: white;
-        text-decoration: none;
-        border-radius: 6px;
-    }
-
-    .section {
-        padding: 60px 8%;
-        text-align: center;
-    }
-
-    .section h2 {
-        font-size: 30px;
-        margin-bottom: 25px;
-    }
-
-    .about {
-        max-width: 750px;
-        margin: auto;
-        color: #555;
-    }
-
-    .cards {
-        display: flex;
-        justify-content: center;
-        gap: 25px;
-        flex-wrap: wrap;
-    }
-
-    .card {
-        background: white;
-        width: 280px;
-        padding: 30px 20px;
-        border-radius: 10px;
-        box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-    }
-
-    .card h3 {
-        margin-bottom: 10px;
-        color: #4f46e5;
-    }
-
-    .card p {
-        color: #666;
-    }
-
-    footer {
-        background: #1f2937;
-        color: white;
-        text-align: center;
-        padding: 25px;
-        margin-top: 20px;
-    }
-
-    @media (max-width: 700px) {
         header {
-            flex-direction: column;
-            gap: 15px;
+            background-color: #ffffff;
+            text-align: center;
+            padding: 30px;
+            border-bottom: 1px solid #ddd;
         }
 
-        nav a {
-            margin: 0 8px;
+        header h1 {
+            margin: 0;
+            color: #333;
         }
 
-        .hero h1 {
-            font-size: 36px;
+        header p {
+            margin-top: 10px;
+            color: #666;
         }
-    }
-</style>
-```
+
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .section {
+            background-color: white;
+            margin-top: 25px;
+            padding: 30px;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+        }
+
+        .section h2 {
+            color: #333;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 10px;
+        }
+
+        .work-box {
+            background-color: #fafafa;
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin-top: 15px;
+            border-radius: 6px;
+        }
+
+        .work-box h3 {
+            margin-top: 0;
+            color: #444;
+        }
+
+        .work-box a {
+            display: inline-block;
+            margin-top: 10px;
+            margin-right: 10px;
+            padding: 8px 15px;
+            background-color: #333;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+
+        .work-box a:hover {
+            background-color: #555;
+        }
+
+        footer {
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+    </style>
 
 </head>
 
 <body>
 
-```
-<header>
-    <h2>Afreen's Portfolio</h2>
+    <header>
 
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#work">Semester Work</a>
-        <a href="#contact">Contact</a>
-    </nav>
-</header>
+        <h1>Welcome to Afreen's Web Page</h1>
 
-<section class="hero" id="home">
-    <h1>Hello, I'm <span>Afreen</span></h1>
+        <p>
+            BS Computer Science | Fatima Jinnah Women University
+        </p>
 
-    <h3>BS Computer Science Student</h3>
+    </header>
 
-    <p>
-        Welcome to my Web Technology portfolio.
-        This website contains my assignments, lab tasks,
-        projects, and other academic work throughout the semester.
-    </p>
 
-    <a href="#work" class="button">View My Work</a>
-</section>
+    <div class="container">
 
-<section class="section" id="about">
-    <h2>About Me</h2>
 
-    <p class="about">
-        I am a BS Computer Science student at
-        Fatima Jinnah Women University.
-        This portfolio is created to document my learning,
-        assignments, practical work, and projects during my semester.
-    </p>
-</section>
+        <!-- About Me -->
 
-<section class="section" id="work">
-    <h2>Semester Work</h2>
+        <div class="section">
 
-    <div class="cards">
+            <h2>About Me</h2>
 
-        <div class="card">
-            <h3>Assignments</h3>
             <p>
-                My Web Technology assignments and academic tasks
-                will be added here throughout the semester.
+                My name is Afreen. I am a BS Computer Science student
+                at Fatima Jinnah Women University.
             </p>
+
+            <p>
+                This website contains my Web Technology work
+                throughout the semester.
+            </p>
+
         </div>
 
-        <div class="card">
-            <h3>Lab Tasks</h3>
-            <p>
-                Practical lab work, exercises, and experiments
-                will be uploaded here.
-            </p>
-            <br>
 
-<a href="lab01.html" class="button">View Lab 01</a>
-<a href="Lab02/flowers.html">Lab 2 - Flowers</a>
+        <!-- Skills -->
+
+        <div class="section">
+
+            <h2>My Skills</h2>
+
+            <p>HTML</p>
+            <p>CSS</p>
+            <p>JavaScript</p>
+            <p>Python</p>
+            <p>Java</p>
+            <p>C++</p>
+
         </div>
 
-        <div class="card">
-            <h3>Projects</h3>
+
+        <!-- Semester Work -->
+
+        <div class="section">
+
+            <h2>My Semester Work</h2>
+
+
+            <!-- Assignments -->
+
+            <div class="work-box">
+
+                <h3>Assignments</h3>
+
+                <p>
+                    My Web Technology assignments will be uploaded here.
+                </p>
+
+                <!-- Future assignments will be added here -->
+
+            </div>
+
+
+            <!-- Lab Tasks -->
+
+            <div class="work-box">
+
+                <h3>Lab Tasks</h3>
+
+                <p>
+                    My Web Technology laboratory tasks are available here.
+                </p>
+
+                <a href="lab01.html">Lab 01</a>
+
+                <a href="Lab02/flowers.html">Lab 02 - Flowers</a>
+
+            </div>
+
+
+            <!-- Quizzes -->
+
+            <div class="work-box">
+
+                <h3>Quizzes</h3>
+
+                <p>
+                    My semester quizzes will be added here.
+                </p>
+
+            </div>
+
+
+            <!-- Tasks -->
+
+            <div class="work-box">
+
+                <h3>Tasks</h3>
+
+                <p>
+                    My Web Technology tasks will be uploaded here.
+                </p>
+
+            </div>
+
+
+            <!-- Projects -->
+
+            <div class="work-box">
+
+                <h3>Projects</h3>
+
+                <p>
+                    My semester projects will be displayed here.
+                </p>
+
+            </div>
+
+
+            <!-- Presentations -->
+
+            <div class="work-box">
+
+                <h3>Presentations</h3>
+
+                <p>
+                    My semester presentations will be added here.
+                </p>
+
+            </div>
+
+
+        </div>
+
+
+        <!-- Contact -->
+
+        <div class="section">
+
+            <h2>University</h2>
+
             <p>
-                My semester projects and web development work
-                will be displayed here.
+                Fatima Jinnah Women University
             </p>
+
+            <p>
+                BS Computer Science
+            </p>
+
+        </div>
+
 
     </div>
-</section>
 
-<section class="section" id="contact">
-    <h2>Contact</h2>
 
-    <p>
-        Fatima Jinnah Women University<br>
-        BS Computer Science
-    </p>
-</section>
+    <footer>
 
-<footer>
-    <p>© 2026 Afreen's Web Technology Portfolio</p>
-</footer>
-```
+        <p>
+            © 2026 Afreen's Web Technology Portfolio
+        </p>
+
+    </footer>
+
 
 </body>
+
 </html>
