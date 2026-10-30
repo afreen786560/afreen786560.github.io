@@ -1,62 +1,47 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-
-    <title>Afreen's Web Page</title>
-
+  <meta charset="UTF-8">
+  <title>Dynamic Theme & Login Task</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <h1>Welcome to Afreen's Web Page</h1>
+  <!-- Header -->
+  <div class="header">
+    <h1 id="themeName">Blue</h1>
+  </div>
 
-    <p>
-        Hello! My name is Afreen. I am a BS Computer Science student
-        at Fatima Jinnah Women University.
-    </p>
+  <!-- Navbar -->
+  <div class="navbar">
+    <a href="#" data-theme="blue">Blue</a> | 
+    <a href="#" data-theme="green">Green</a> | 
+    <a href="#" data-theme="yellow">Yellow</a>
+  </div>
 
-    <hr>
+  <!-- Login Form Area -->
+  <div class="form-area">
+    <div class="row">
+      <label for="username">Login :</label>
+      <input type="text" id="username" placeholder="Enter login">
+    </div>
 
-    <h2>About My Work</h2>
+    <div class="row">
+      <label for="password">Password :</label>
+      <input type="password" id="password" placeholder="Enter password">
+    </div>
 
-    <p>
-        This website contains my Web Technology laboratory work
-        and other academic activities that I complete during my semester.
-    </p>
+    <div class="row action">
+      <span id="errorMsg"></span>
+      <button id="loginBtn">Login</button>
+    </div>
+  </div>
 
-    <h2>About Web Technology</h2>
+  <!-- Result Box -->
+  <div id="resultBox" class="result-box">
+    Blue
+  </div>
 
-    <p>
-        Web Technology is an interesting field of Computer Science
-        that helps us create and design websites for the Internet.
-        In this course, I am learning how web pages are created using
-        HTML, styled using CSS, and made interactive using JavaScript.
-        Through practical work and laboratory tasks, I am developing
-        my understanding of web development and improving my skills
-        step by step.
-    </p>
-
-    <h2>My Web Technology Labs</h2>
-
-    <p>
-        <a href="lab01.html">Lab 01</a>
-    </p>
-
-   ```html
-<p>
-    <a href="Lab02/flowers.html">Lab 02 - Flowers</a>
-</p>
-
-<p>
-    <a href="formtask/first.html">Form Task</a>
-</p>
-
-<p>
-    <a href="WorldMapProject/index.html">Explore Asia Project</a>
-</p>
-
+  <script src="script.js"></script>
 </body>
-
 </html>
